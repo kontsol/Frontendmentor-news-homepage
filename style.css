@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 4rem 16rem;
+  background-color: #252422;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  transform: translateX(-4.5rem);
+}
+
+.menu ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #eb5e28;
+  padding: 0.4rem 1rem;
+  height: 2rem;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+}
+
+.menu ul li:hover {
+  animation: li_transform 0.7s forwards;
+  color: #fffcf2;
+  border: 1px solid #eb5f2859;
+  box-shadow: 0 0 15px #eb5f2880;
+}
+
+@keyframes li_transform {
+  from {
+    transform: translateY(0px);
+    box-shadow: 0 0 15px #eb5f2880;
+  }
+
+  to {
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 15px #eb5f2880;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.first-section {
+  padding-right: 2.2rem;
+}
+
+.first-section-image img {
+  width: 56.5rem;
+  height: 19rem;
+  background-position: center;
+  background-size: contain;
+  border: 0.2px solid #d9d9d938;
+  border-radius: 4px;
+}
+
+.first-section-texts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 1.3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.big-font-text {
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: #fffcf2;
+  padding-bottom: 2.5rem;
+  padding-right: 4rem;
+  letter-spacing: 3px;
+}
+
+.text-button {
+  padding-right: 2rem;
+  font-weight: 400;
+  font-size: 1.02rem;
+  color: #ccc5b9;
+  align-items: center;
+}
+
+.text-button p {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+  line-height: 1.8;
+  letter-spacing: 0.25px;
+}
+
+.text-button a {
+  margin-top: 4rem;
+  transition: all 0.4s ease-in;
+}
+
+.text-button a:visited,
+.text-button a:link {
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  background-color: #403d39;
+  color: #ccc5b9;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+}
+
+.text-button a:hover {
+  transform: scale(2);
+  background-color: #fffcf2;
+  color: #eb5e28;
+  box-shadow: 0 0 10px 1px #eb5f28af;
+}
+
+.second-section {
+  width: 23rem;
+  height: 34rem;
+  background-color: #fffcf2;
+}
+
+.news-section {
+  padding-top: 1.62rem;
+  padding-left: 1.4rem;
+  padding-right: 1.6rem;
+  align-items: center;
+}
+
+.news-section .new {
+  color: #eb5e28;
+  padding-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.first-para {
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid #403d39;
+}
+
+.first-para h1 {
+  font-weight: 700;
+  /* font-size: 1.392rem; */
+  font-size: 1.35rem;
+  color: #252422;
+  padding-bottom: 0.56rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.first-para p {
+  padding-top: 0.25rem;
+  font-weight: 400;
+  font-size: 1.01rem;
+  color: #403d39;
+  line-height: 1.55;
+}
+
+.second-para {
+  padding-top: 2rem;
+  padding-bottom: 2.2rem;
+}
+
+.second-para h1 {
+  font-weight: 700;
+  font-size: 1.35rem;
+
+  color: #252422;
+  padding-bottom: 0.56rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.second-para p {
+  font-size: 1.01rem;
+  font-weight: 400;
+
+  color: #403d39;
+  line-height: 1.55;
+}
+
+.third-para {
+  padding-top: 2rem;
+}
+
+.third-para h1 {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #252422;
+  transition: all 0.4s ease-in-out;
+}
+
+.third-para p {
+  font-size: 1.01rem;
+  font-weight: 400;
+
+  color: #403d39;
+  line-height: 1.55;
+  padding-top: 0.6rem;
+}
+
+.first-para h1:hover,
+.second-para h1:hover,
+.third-para h1:hover {
+  color: #eb5e28;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 15rem;
+  height: 8.6rem;
+  margin-right: 4.3rem;
+}
+
+.grid h1 {
+  color: #fffcf2;
+  font-size: 2.5rem;
+}
+
+.grid h2 {
+  color: #403d39;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid h2:hover {
+  color: #eb5e28;
+}
+
+.grid p {
+  color: #ccc5b9;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.image-grid img {
+  width: 8rem;
+  height: 8.6rem;
+}
